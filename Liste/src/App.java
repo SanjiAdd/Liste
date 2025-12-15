@@ -11,6 +11,9 @@ public class App {
         l.add("anna");
         l.remove("mario");
         System.out.println(l);
+        System.out.println( l.exists("anna") );
+        l.remove("gian");
+        System.out.println(l);
     }
     }
 

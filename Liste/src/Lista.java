@@ -31,7 +31,16 @@ public class Lista {
     }
 
     public boolean exists(String s){
-        return true;//da implementare
+        Nodo temp=root;
+        while(temp!=null){
+            if(temp.getValue().equals(s)){
+                return true;
+            }
+            temp=temp.getNext();
+        }
+        return false;
+        
+
     }
 
     public void addTail(Nodo n) {
